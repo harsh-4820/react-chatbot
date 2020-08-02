@@ -5,9 +5,9 @@ class MessageParser {
   
     parse(message) {
       const lowerCaseMessage = message.toLowerCase();
-      if(lowerCaseMessage.includes("hi"))
+      if(lowerCaseMessage.includes("hi") || lowerCaseMessage.includes("hello"))
         this.actionProvider.greet();
-      if(lowerCaseMessage.includes("javascript"))
+      if(lowerCaseMessage.includes("javascript") || lowerCaseMessage.includes("js"))
         this.actionProvider.handleJavascriptList();
     }
   }
